@@ -7,20 +7,21 @@
 body{
     box-sizing: border-box;
     /* text-align: center; */
+    background: lightgray;
 }
 
 .clockman{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    height: 80vh;
 }
 
 .clock{
     width: 380px;
     height: 380px;
     border-radius: 50%;
-    background: url("./images.png");
+    background: url("./watch.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
@@ -33,6 +34,19 @@ body{
     }
 }
 
+.clock .day{
+    width: 60px;
+    height: 60px;
+    /* background: palegreen; */
+border-radius: 50%;
+    border: 2px white solid;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-60%, -30%);
+
+}
+
 .clock .hand{
     --rotation: 0;
     position: absolute;
@@ -40,10 +54,9 @@ body{
     left: 50%;
     /* height: 40%;
     width: 10px; */
-    border: 0.1px white solid;
+    /* border: 0.1px white solid; */
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    background: black;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
     transform-origin: bottom;
     z-index: 10;
@@ -52,7 +65,7 @@ body{
 .clock::after{
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: white;
     z-index: 11;
     width: 20px;
     height: 20px;
@@ -64,26 +77,27 @@ body{
 
 .clock .hand.hourhand{
     height: 30%;
-    width: 10px;
-    background: black;
+    width: 2px;
+    background: white;
 }
 
 .clock .hand.secondhand{
     height: 40%;
-    width: 2px;
+    width: 1px;
     background: orange;
+    border: none;
 }
 
 .clock .hand.minuteshand{
-    width: 10px;
-    height: 35%;
-    background-color: black;
+    width: 2px;
+    height: 40%;
+    background-color: white;
 }
 
 
 
 .attribute{
-    min-height: 10vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +122,13 @@ body{
 }
 
 
-
+.day{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 
 

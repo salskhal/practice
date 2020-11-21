@@ -5,6 +5,29 @@ const minutehand = document.querySelector("[data-minute-hand]")
 const secondhand = document.querySelector("[data-seconds-hand]")
 
 
+    let fetchDay = new Date().getDay();
+    let day;
+    
+    if (fetchDay == 1){
+        document.getElementById("day").innerHTML = "MON"
+    } else if (fetchDay == 2){
+        document.getElementById("day").innerHTML = "TUE"
+    } else if (fetchDay == 3) {
+        document.getElementById("day").innerHTML = "WED"
+    } else if (fetchDay == 4){
+        document.getElementById("day").innerHTML = "THUR"
+    } else if (fetchDay == 5){
+        document.getElementById("day").innerHTML = "FRI"
+    } else if ( fetchDay == 6){
+        document.getElementById("day").innerHTML = "SAT"
+    } else {
+        document.getElementById("day").innerHTML = "SUN"
+    }
+
+
+    console.log(day)    
+
+
 function setClock() {
     const date = new Date();
     const seconds = date.getSeconds() / 60;
@@ -21,3 +44,7 @@ function setRotation(element, rotationRatio){
 }
 
 setClock()
+
+
+
+
