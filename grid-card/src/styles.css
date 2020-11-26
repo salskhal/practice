@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.down{
+    @apply flex justify-between items-center mt-3 border-b border-gray-500 pb-3;
+}
+
+.dollar{
+    @apply text-red-500 font-semibold;
+}
+
+.brand{
+    @apply block font-semibold;
+}
+
+.btn{
+    @apply px-4 py-1 rounded-full border text-gray-400;
+}
