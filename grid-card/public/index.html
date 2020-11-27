@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAlS</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./main.js" defer></script>
 </head>
 
 <body>
@@ -64,13 +65,22 @@
                     </path>
                 </svg>
             </div>
-            <div class="text-gray-500 cursor-pointer">
-                <span>Sort by</span>
-                <svg class="w-6 h-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
+
+            <div class="text-gray-500">
+                <div id="menu" class="cursor-pointer">
+                    <span>Sort by</span>
+                    <svg class="w-6 h-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>  
+                <div class="deco list-none text-center mt-2 hidden" id="toggle">
+                    <li>$ - $$$$</li>
+                    <li>$$$$ - $</li>
+                    <li>Newest</li>
+                </div>
             </div>
+
         </div>
         <div class="grid md:grid-cols-2 gap-3 lg:grid-cols-4 mt-6 mb-10">
 
@@ -237,6 +247,9 @@
             </div>
 
         </div>
+    </div>
+    <div class="bg-gray-500 px-3 text-center py-3 text-white" >
+        <span>copyright @sals</span>
     </div>
 </body>
 
