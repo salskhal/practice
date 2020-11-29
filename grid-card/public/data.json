@@ -1,0 +1,50 @@
+[
+    {
+        "img": "./img/bag.jpg",
+        "price": "$ 90",
+        "title": "Classy Wolf Bag",
+        "brand": "Wolf"
+    },
+    {
+        "img": "./img/bag2.jpg",
+        "price": "$ 100",
+        "title": "Leather Work Bag",
+        "brand": "RadsStore"
+    },
+    {
+        "img": "./img/sunglass.jpg",
+        "price": "$ 60",
+        "title": "Masy Sunglasses",
+        "brand": "Masy.ng"
+    },
+    {
+        "img": "./img/face-cap.jpg",
+        "price": "$ 30",
+        "title": "LA Sports Cap",
+        "brand": "LaMan"
+    },
+    {
+        "img": "./img/tie.jpg",
+        "price": "$ 300",
+        "title": "Office Tie",
+        "brand": "Vertex"
+    }, 
+    {
+        "img": "./img/hat1.jpg",
+        "price": "$ 60",
+        "title": "Classic Ladies Hat",
+        "brand": "HatByHanifah"
+    },
+    {
+        "img": "./img/watch.jpg",
+        "price": "$ 2000",
+        "title": "Fossil Watch",
+        "brand": "Sals Luxury"
+    },
+    {
+        "img": "./img/shoe.jpg",
+        "price": "$ 1200",
+        "title": "Unisex Sneaker",
+        "brand": "Sals Luxury"
+    }
+]
