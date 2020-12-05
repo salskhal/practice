@@ -3,7 +3,8 @@
         "img": "./img/bag.jpg",
         "price": "$ 90",
         "title": "Classy Wolf Bag",
-        "brand": "Wolf"
+        "brand": "Wolf",
+        "cla": 2
     },
     {
         "img": "./img/bag2.jpg",

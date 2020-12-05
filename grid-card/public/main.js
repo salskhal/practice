@@ -18,7 +18,7 @@ fetch("./data.json")
         document.getElementById("app").innerHTML = 
 
         `
-        <div class="grid md:grid-cols-2 gap-3 lg:grid-cols-4 mt-6 mb-10">
+        <div class="grid md:grid-cols-2 gap-3 lg:grid-cols-4 mt-6 mb-10 ">
         ${word.map(data =>{
             return  `
                 <div>
@@ -40,7 +40,7 @@ fetch("./data.json")
                 </div>
 
             `
-        }).join("")}
+        }).join("")} 
         </div>
         `
 })
